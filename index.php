@@ -70,15 +70,19 @@ $faq = [
 
             foreach ($faq as $faqElement) { ?>
 
-                <h5><?= $faqElement['question'] ?></h5>
+                <div class="faqElement pt-5">
 
-                <?php
-                foreach ($faqElement['answer'] as $faqAnswer) {
-                ?>
-                    <p> <?= $faqAnswer ?> </p>
-                <?php
-                }
-                ?>
+                    <h5><?= $faqElement['question'] ?></h5>
+
+                    <?php
+                    foreach ($faqElement['answer'] as $faqAnswer) {
+                    ?>
+                        <p> <?= $faqAnswer ?> </p>
+                    <?php
+                    }
+                    ?>
+
+                </div>
 
             <?php
             } ?>
